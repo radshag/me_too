@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Your browser is not supported</title>
+    <style>
+		@import url("https://fonts.googleapis.com/css?family=Source+Serif+Pro:300,400,500,600,700|Source+Sans+Pro:300,400,500,600,700,500italic");
+    	body {
+    		background: #1b2a54;
+		    color: #363944;
+		    font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+		    font-weight: 500;
+    	}    	
+    	h1 {
+		    color: #0f7fdb;
+		    font-weight: 400;
+		    font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+		    font-size: 2em;
+		    letter-spacing: 0.05em;
+		    margin-bottom: 0.6em;
+		    text-align: center;
+		}
+		/*
+		#aml_logo_svg {
+			display: block;
+			margin: 0 auto;
+		}
+		*/
+		#errormessage {
+			background-color: rgba(255, 255, 255, 0.8);
+			width: 80%;
+			max-width: 900px;
+			margin: 40px auto;
+			padding: 2.4em;
+			font-size: 24px;
+		}
+
+		a,
+		a:active,
+		a:focus,
+		a:visited {
+		  outline: 0;
+		  color: #0f7fdb;
+		  text-decoration: none; 
+		}
+		a:hover {
+		  color: #0f7fdb;
+		  text-decoration: underline; 
+		}
+    </style>
+</head>
+<body>
+<div id="errormessage">
+	<!-- <object type="image/svg+xml" data="img/aml-logo.svg" id="aml_logo_svg"></object> -->
+    <h1 style="">Your browser is not supported</h1>
+    <p>This course is designed using the latest web technologies. You are using Internet Explorer version 10 or earlier which is no longer supported by Microsoft.</p>
+    <p>Please try re-launching this course in a newer version of Internet Explorer, <a href="https://www.google.com/chrome/">Google Chrome</a> or <a href="https://www.mozilla.org/firefox/new/">Mozilla Firefox</a>.</p>
+    <div style="text-align: center; margin: 0 auto; max-width: 80%"><!-- <img src="images/ie9badge.png" alt="Sorry, it's just not your day!" /> --></div>
+</div>
+
+<script>
+	window.onload = function () {
+		var svgDoc = document.getElementById("aml_logo_svg").contentDocument;
+		var styleElement = svgDoc.createElementNS("http://www.w3.org/2000/svg", "style");
+		styleElement.textContent = "svg { color: #0f7fdb; fill: #0f7fdb; stroke: #0f7fdb;}"; // add whatever you need here
+		svgDoc.firstChild.appendChild(styleElement);
+	};
+
+</script>
+
+</body>
+</html>

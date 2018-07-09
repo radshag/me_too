@@ -1,0 +1,25 @@
+mixin inline(src)
+  script
+    != fs.readFileSync(`./src/ubercourse/${src}`, 'utf8')
+
+mixin vendor(name)
+  script(src=`ubercourse/vendor/${name}`, defer="defer")
+    
+//- inline scripts
++inline('js/compatibilitytest.min.js')
+script.
+  var browserVersion = browserCheck();
++inline('vendor/SCORM_API_wrapper.min.js')
++inline('js/scormextern.min.js')
++inline('js/V.SCORM.min.js')
++inline('js/V.Review.min.js')
+
+//- third party
+script(src='https://global.localizecdn.com/localize.js' defer="defer" onload="console.log('localize')")
++vendor('jquery-2.2.4.min.js')
++vendor('TweenMax.min.js')
++vendor('EasePack.js') 
++vendor('CustomEase.js')
++vendor('ScrollMagic.min.js')
+
+

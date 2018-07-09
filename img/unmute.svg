@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="22" height="22" version="1.1" viewBox="0 0 22 21.999999" xmlns="http://www.w3.org/2000/svg">
+ <defs>
+  <style>.cls-1{fill:#fff;}.cls-2{fill:none;stroke:#fff;stroke-miterlimit:10;}</style>
+ </defs>
+ <title>unmute</title>
+ <polygon class="cls-1" transform="translate(0,3.46)" points="5.9 10.98 10.8 14.91 10.8 7.05 10.8 0.17 5.9 4.1 0 4.1 0 10.98" style="fill:#fff"/>
+ <path class="cls-2" d="m16 16.475c3.56-4.94 2-9.07 0-10.87" style="fill:none;stroke-miterlimit:10;stroke:#fff"/>
+ <path class="cls-2" d="m14.4 8.0217c1.32 1.07 1.44 4.49 0 6" style="fill:none;stroke-miterlimit:10;stroke:#fff"/>
+ <path class="cls-2" d="m17.22 18.836c5.62-6.45 3.46-12.25-0.05-15.64" style="fill:none;stroke-miterlimit:10;stroke:#fff"/>
+</svg>
